@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Engineering Project Management</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f7f9;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      padding: 20px;
+    }
+    .hidden {
+      display: none;
+    }
+    .progress-container {
+      background: #ddd;
+      border-radius: 20px;
+      overflow: hidden;
+      margin: 20px 0;
+      height: 25px;
+    }
+    .progress-bar {
+      height: 100%;
+      width: 0;
+      background: #007bff;
+      text-align: center;
+      color: white;
+      line-height: 25px;
+      font-size: 14px;
+      transition: width 0.4s ease;
+    }
+    button, a.button-link {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-top: 10px;
+      cursor: pointer;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      margin-right: 10px;
+      text-decoration: none;
+      display: inline-block;
+      text-align: center;
+    }
+    h2 {
+      background-color: #5a3a8c;
+      color: white;
+      padding: 10px;
+    }
+    ul {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Enroll Button -->
+  <div id="enrollSection">
+    <button onclick="startCourse()">Enroll</button>
+  </div>
+
+  <!-- Course Content -->
+  <div id="courseSection" class="hidden">
+    <h2>Learning Outcomes</h2>
+    <ul id="outcomesList">
+      <li>Define the concept of engineering and its role among other sciences.</li>
+      <li>Describe the discipline of engineering management and how it works.</li>
+      <li>Discuss what is meant by project management and its historical relationship with engineering.</li>
+      <li>Distinguish between engineering project management and engineering management.</li>
+      <li>Outline the importance of engineering project management.</li>
+    </ul>
+
+    <div class="progress-container">
+      <div class="progress-bar" id="progressBar">0%</div>
+    </div>
+
+    <button onclick="nextOutcome()">Next</button>
+    <a href="enroll.html" class="button-link">Back</a>
+  </div>
+</div>
+
+<script>
+  let currentStep = 0;
+  const totalSteps = 5; // Number of outcomes
+  const progressBar = document.getElementById("progressBar");
+  const outcomes = document.querySelectorAll("#outcomesList li");
+
+  function startCourse() {
+    document.getElementById("enrollSection").classList.add("hidden");
+    document.getElementById("courseSection").classList.remove("hidden");
+    outcomes.forEach((outcome, index) => {
+      if (index !== 0) {
+        outcome.style.display = "none";
+      }
+    });
+  }
+
+  function nextOutcome() {
+    if (currentStep < totalSteps - 1) {
+      outcomes[currentStep].style.display = "none";
+      currentStep++;
+      outcomes[currentStep].style.display = "list-item";
+
+      updateProgress();
+    } else {
+      alert("You have completed the module!");
+      updateProgress();
+    }
+  }
+
+  function updateProgress() {
+    const percent = Math.round(((currentStep + 1) / totalSteps) * 100);
+    progressBar.style.width = percent + "%";
+    progressBar.innerText = percent + "%";
+  }
+</script>
+
+</body>
+</html>

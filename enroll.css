@@ -1,0 +1,368 @@
+/* Reset some basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and font */
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  line-height: 1.6;
+}
+
+/* Header */
+.header, .navbar {
+  background-color: #003366;
+  color: white;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+}
+
+.nav, .nav-links, .navigation-menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-menu ul, .nav-links, .navigation-menu {
+  padding-left: 0;
+}
+
+.nav-menu ul li, .nav-links li, .navigation-menu li {
+  margin: 0 1rem;
+}
+
+.nav-menu ul li a, .nav-links li a, .navigation-menu li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-menu ul li a:hover, .nav-links li a:hover, .navigation-menu li a:hover,
+.nav-menu ul li a.active, .nav-links li a.active, .navigation-menu li a.active {
+  color: #66a3ff;
+}
+
+.nav-actions, .nav-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-box, .nav-right input {
+  padding: 0.4rem 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-btn, .join-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn {
+  background-color: #ffffff;
+  color: #003366;
+  border: 2px solid #003366;
+}
+
+.login-btn:hover {
+  background-color: #003366;
+  color: #fff;
+}
+
+.join-btn {
+  background-color: #003366;
+  color: #ffffff;
+}
+
+.join-btn:hover {
+  background-color: #002244;
+}
+
+/* Hero Section */
+.hero, .business-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 20px;
+  background-color: #e6f0ff;
+  color: #003366;
+  flex-wrap: wrap;
+}
+
+.hero-content, .hero-left {
+  max-width: 600px;
+  flex: 1;
+  padding-right: 2rem;
+}
+
+.hero-left h1, .hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #003366;
+}
+
+.hero-points {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-points li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.hero-buttons, .hero-content .hero-buttons {
+  margin-top: 1rem;
+}
+
+.contact-btn, .primary-btn {
+  background-color: #003366;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover, .primary-btn:hover {
+  background-color: #002244;
+}
+
+.secondary-btn {
+  border: 1px solid #003366;
+  color: #003366;
+  background: transparent;
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.secondary-btn:hover {
+  background-color: #003366;
+  color: white;
+}
+
+.hero-right {
+  flex: 1;
+  text-align: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+/* Updated card section styles */
+.courses-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.course-card {
+  background: white;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.course-card img {
+  margin-bottom: 10px;
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.course-card .course-title {
+  margin-bottom: 10px;
+  color: #003366;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.course-card .level {
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+.course-card .course-info {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.course-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Reset and existing styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and font */
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  line-height: 1.6;
+}
+
+/* Progress bar styles */
+.progress-section {
+  margin: 20px;
+  padding: 15px;
+  background-color: #f0f4f8;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.progress-section h2 {
+  margin-bottom: 15px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Feedback form styles */
+.feedback-section {
+  margin: 40px auto;
+  max-width: 600px;
+  background-color: #f0f4f8;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.feedback-section h2 {
+  text-align: center;
+  color: #003366;
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.feedback-form .form-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.feedback-form label {
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #333;
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"],
+.feedback-form input[type="tel"],
+.feedback-form textarea {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  resize: vertical;
+  transition: border-color 0.3s ease;
+}
+
+.feedback-form input[type="text"]:focus,
+.feedback-form input[type="email"]:focus,
+.feedback-form input[type="tel"]:focus,
+.feedback-form textarea:focus {
+  border-color: #003366;
+  outline: none;
+}
+
+.feedback-form textarea {
+  min-height: 100px;
+}
+
+.feedback-form button.primary-btn {
+  width: 100%;
+  padding: 12px 0;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.progress-container {
+  margin-bottom: 15px;
+}
+
+.label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.progress-bar-background {
+  width: 100%;
+  background-color: #ddd;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 25px;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  width: 0;
+  color: white;
+  line-height: 25px;
+  font-size: 14px;
+  text-align: center;
+  transition: width 0.4s ease;
+  border-radius: 20px 0 0 20px;
+}
+
+.green {
+  background-color: #28a745;
+}
+
+.blue {
+  background-color: #007bff;
+}
+
+.yellow {
+  background-color: #ffc107;
+}

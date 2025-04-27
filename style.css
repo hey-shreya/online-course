@@ -1,0 +1,338 @@
+/* Merged and unified styles from business.css and original style.css */
+
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and font */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+
+/* Header */
+.header, .navbar {
+    background-color: #003366;
+    color: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+}
+
+.nav, .nav-links, .navigation-menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-menu ul, .nav-links, .navigation-menu {
+    padding-left: 0;
+}
+
+.nav-menu ul li, .nav-links li, .navigation-menu li {
+    margin: 0 1rem;
+}
+
+.nav-menu ul li a, .nav-links li a, .navigation-menu li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-menu ul li a:hover, .nav-links li a:hover, .navigation-menu li a:hover,
+.nav-menu ul li a.active, .nav-links li a.active, .navigation-menu li a.active {
+    color: #66a3ff;
+}
+
+.nav-actions, .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-box, .nav-right input {
+    padding: 0.4rem 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-btn, .join-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn {
+    background-color: #ffffff;
+    color: #003366;
+    border: 2px solid #003366;
+}
+
+.login-btn:hover {
+    background-color: #003366;
+    color: #fff;
+}
+
+.join-btn {
+    background-color: #003366;
+    color: #ffffff;
+}
+
+.join-btn:hover {
+    background-color: #002244;
+}
+
+/* Hero Section */
+.hero, .business-hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #e6f0ff;
+    color: #003366;
+    flex-wrap: wrap;
+}
+
+.hero-content, .hero-left {
+    max-width: 600px;
+    flex: 1;
+    padding-right: 2rem;
+}
+
+.hero-left h1, .hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #003366;
+}
+
+.hero-points {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-points li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.hero-buttons, .hero-content .hero-buttons {
+    margin-top: 1rem;
+}
+
+.contact-btn, .primary-btn {
+    background-color: #003366;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover, .primary-btn:hover {
+    background-color: #002244;
+}
+
+.secondary-btn {
+    border: 1px solid #003366;
+    color: #003366;
+    background: transparent;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.secondary-btn:hover {
+    background-color: #003366;
+    color: white;
+}
+
+.hero-right {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Partners Section */
+.partners {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.partner-logos, .business-logos .logos-grid, .business-logos .logos {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.partner-logos img, .business-logos .logos-grid img, .business-logos .logos img {
+    max-height: 60px;
+    object-fit: contain;
+}
+
+/* Cards Section */
+.cards, .degree-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card, .degree-card {
+    background: white;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card img, .degree-card img {
+    margin-bottom: 10px;
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card h3, .degree-card h4 {
+    margin-bottom: 10px;
+    color: #003366;
+}
+
+.card p, .degree-card p {
+    font-size: 14px;
+    color: #555;
+}
+
+.degree-card:hover, .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Business Stats Section */
+.business-stats {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background-color: #f0f8ff;
+    color: #003366;
+    text-align: center;
+}
+
+.business-stats .stat-item, .business-stats .stat {
+    text-align: center;
+}
+
+.business-stats .stat-item h2, .business-stats .stat h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #003366;
+}
+
+.business-stats .stat-item p, .business-stats .stat p {
+    font-size: 1rem;
+}
+
+/* Transform Section */
+.transform-section {
+    padding: 40px 20px;
+    background-color: #e6f0ff;
+    color: #003366;
+    text-align: center;
+}
+
+.icons-section {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.icon-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 150px;
+    padding: 1rem;
+    background-color: #cce0ff;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.icon-box:hover {
+    transform: translateY(-5px);
+}
+
+.icon-box img {
+    max-width: 80px;
+    margin-bottom: 10px;
+}
+
+.icon-box p {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Footer */
+.footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-show, .btn-view {
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #003366;
+    background: white;
+    color: #003366;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.btn-show:hover, .btn-view:hover {
+    background: #003366;
+    color: white;
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Enroll - Learn Without Limits</title>
+  <link rel="stylesheet" href="enroll.css" />
+</head>
+<body>
+  
+<header class="header">
+  <div class="nav">
+    <div class="logo">Skill Nest</div>
+    <nav>
+      <ul class="navigation-menu">
+        <li><a href="index.html">For Individuals</a></li>
+        <li><a href="business.html">For Businesses</a></li>
+        <li><a href="#universities">For Universities</a></li>
+        <li><a href="#governments">For Governments</a></li>
+      </ul>
+    </nav>
+    <div class="nav-right">
+      <input type="text" placeholder="What do you want to learn?" />
+      <button class="login-btn">Log in</button>
+      <button class="join-btn">Join for Free</button>
+    </div>
+  </div>
+</header>
+
+<!-- Progress Section -->
+<section class="progress-section">
+  <h2>Your Progress</h2>
+
+  <div class="progress-container">
+    <div class="label">HTML & CSS</div>
+    <div class="progress-bar-background">
+      <div class="progress-bar-fill green" id="htmlProgress">0%</div>
+    </div>
+  </div>
+
+  <div class="progress-container">
+    <div class="label">JavaScript</div>
+    <div class="progress-bar-background">
+      <div class="progress-bar-fill blue" id="jsProgress">0%</div>
+    </div>
+  </div>
+
+  <div class="progress-container">
+    <div class="label">Backend (PHP & MySQL)</div>
+    <div class="progress-bar-background">
+      <div class="progress-bar-fill yellow" id="backendProgress">0%</div>
+    </div>
+  </div>
+
+  <button onclick="fillProgress()">Simulate Progress</button>
+</section>
+
+<div class="courses-container">
+    <!-- Course 1 -->
+    <div class="course-card">
+        <div class="badge">DIPLOMA</div>
+        <img src="https://via.placeholder.com/250x150.png?text=Caregiving" alt="Diploma in Caregiving">
+        <div class="course-content">
+            <div class="level" style="color: #a56bcb;">BEGINNER LEVEL</div>
+            <div class="course-title">Diploma in Caregiving</div>
+            <div class="course-info">
+                <span>6-10 hrs</span> | 
+                <span>812,903 learners</span>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="info-btn">More Info</button>
+            <button>Start Learning</button>
+        </div>
+    </div>
+
+    <!-- Course 2 -->
+    <div class="course-card">
+        <div class="badge">CERTIFICATE</div>
+        <img src="https://via.placeholder.com/250x150.png?text=Food+Safety" alt="HACCP Food Safety System">
+        <div class="course-content">
+            <div class="level" style="color: #1e90ff;">ADVANCED LEVEL</div>
+            <div class="course-title">HACCP Food Safety System for Restaurants and Other Catering Services</div>
+            <div class="course-info">
+                <span>3-4 hrs</span> | 
+                <span>117,099 learners</span>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="info-btn">More Info</button>
+            <button>Start Learning</button>
+        </div>
+    </div>
+
+    <!-- Course 3 -->
+    <div class="course-card">
+        <div class="badge">CERTIFICATE</div>
+        <img src="https://via.placeholder.com/250x150.png?text=Management" alt="Japanese Management System">
+        <div class="course-content">
+            <div class="level" style="color: #1e90ff;">ADVANCED LEVEL</div>
+            <div class="course-title">Japanese Management System - Theory Z and Beyond</div>
+            <div class="course-info">
+                <span>2-3 hrs</span> | 
+                <span>347 learners</span>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="info-btn">More Info</button>
+            <button>Start Learning</button>
+        </div>
+    </div>
+
+    <!-- Course 4 -->
+    <div class="course-card">
+        <div class="badge">CERTIFICATE</div>
+        <img src="https://via.placeholder.com/250x150.png?text=Infection+Control" alt="Infection Control in Health Care">
+        <div class="course-content">
+            <div class="level" style="color: #3cb371;">INTERMEDIATE LEVEL</div>
+            <div class="course-title">Infection Control in Health Care</div>
+            <div class="course-info">
+                <span>3-4 hrs</span> | 
+                <span>35,013 learners</span>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="info-btn">More Info</button>
+            <button>Start Learning</button>
+        </div>
+    </div>
+</div>
+
+<section class="feedback-section">
+  <h2>Feedback Now</h2>
+  <form id="feedbackForm" class="feedback-form">
+    <div class="form-row">
+      <label for="fullName">Full Name</label>
+      <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required />
+    </div>
+    <div class="form-row">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email address" required />
+    </div>
+    <div class="form-row">
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required />
+    </div>
+    <div class="form-row">
+      <label for="college">College Name</label>
+      <input type="text" id="college" name="college" placeholder="Enter your college name" required />
+    </div>
+    <div class="form-row">
+      <label for="message">Your Message or Query</label>
+      <textarea id="message" name="message" rows="5" placeholder="Enter your message or query" required></textarea>
+    </div>
+    <button type="submit" class="primary-btn">Submit</button>
+  </form>
+</section>
+
+<script src="enroll.js"></script>
+</body>
+</html>
